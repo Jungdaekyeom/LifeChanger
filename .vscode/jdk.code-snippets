@@ -1,0 +1,32 @@
+{
+  "Create functional component": {
+    "prefix": "klog1",
+    "body": ["console.log('🙇🙇🙇 LOG 🙇🙇🙇', ${1})"],
+    "description": ""
+  },
+  "Create functional component2": {
+    "prefix": "klog2",
+    "body": ["console.log('😍😍😍 LOG 😍😍😍', ${1})"],
+    "description": ""
+  },
+  "Create functional component3": {
+    "prefix": "klog3",
+    "body": ["console.log('💥💥💥 LOG 💥💥💥', ${1})"],
+    "description": ""
+  },
+  "Create functional component4": {
+    "prefix": "klog4",
+    "body": ["console.log('🙉🙉🙉 LOG 🙉🙉🙉', ${1})"],
+    "description": ""
+  },
+  "Create functional component5": {
+    "prefix": "klog5",
+    "body": ["console.log('🐤🐤🐤 LOG 🐤🐤🐤', ${1})"],
+    "description": ""
+  },
+  "Create functional component6": {
+    "prefix": "klog6",
+    "body": ["console.log('😈😈😈 LOG 😈😈😈', ${1})"],
+    "description": ""
+  }
+}

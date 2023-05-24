@@ -55,6 +55,10 @@ yarn-error.log
 # Bundle artifact
 *.jsbundle
 
+#로컬히스토리 
+.history/*
+.lh/*
+
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/

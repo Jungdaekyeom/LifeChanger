@@ -1,0 +1,32 @@
+{
+  "[typescript]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
+  "[typescriptreact]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
+  "eslint.autoFixOnSave": true,
+  "workbench.startupEditor": "newUntitledFile",
+
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+
+  "path-intellisense.mappings": {
+    "@assets": "${workspaceFolder}/assets"
+  },
+  "gutterpreview.paths": {
+    "@assets": "./../assets"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "i18n-ally.localesPaths": "src/locale/",
+  "i18n-ally.enabledFrameworks": ["react", "i18next", "general"],
+  "i18n-ally.namespace": true,
+  "i18n-ally.pathMatcher": "{locale}/{namespaces}.json",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.displayLanguage": "ko",
+  "java.configuration.updateBuildConfiguration": "interactive"
+}

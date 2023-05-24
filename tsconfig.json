@@ -1,3 +1,68 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "react-jsx",
+    "emitDecoratorMetadata": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "baseUrl": ".",
+    "typeRoots": ["./@types", "./node_modules/@types"],
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@services/*": ["./src/services/*"],
+      "@navigation/*": ["./src/navigations/*"],
+      "@message/*": ["./src/services/message/*"],
+      "@messenger/*": ["./src/services/messenger/*"],
+      "@organize/*": ["./src/services/organize/*"],
+      "@main/*": ["./src/main/*"],
+      "@common/*": ["./src/common/*"],
+      "@loginInfo/*": ["./src/services/login/wehago-react-native-login/*"],
+      "@contract/*": ["./src/services/contract/*"],
+      "@lib/*": ["./src/_lib/*"],
+      "@certificate/*": ["./src/services/certificate/*"],
+      "@attendance/*": ["./src/services/attendance/*"],
+      "@settlement/*": ["./src/services/settlement/*"],
+      "@genIncomeTax/*": ["./src/services/genIncomeTax/*"],
+      "@newDocument/*": ["./src/services/newDocument/*"],
+      "@schedule/*": ["./src/services/schedule/*"],
+      "@mail/*": ["./src/services/mail/*"],
+      "@news/*": ["./src/services/news/*"],
+      "@cloud/*": ["./src/services/cloud/*"],
+      "@realEstateTax/*": ["./src/services/realEstateTax/*"],
+      "@newDocument/*": ["./src/services/newDocument/*"],
+      "@settlementSimulation/*": ["./src/services/settlementSimulation/*"]
+    },
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "isolatedModules": false,
+    "allowJs": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
+  "exclude": ["node_modules", "**/*.test.tsx", "**/*.spec.ts"],
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    }
+  },
+  "files": ["environment.d.ts"]
 }
