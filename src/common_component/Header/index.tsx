@@ -8,6 +8,7 @@ interface Props {
 
 const CommonHeader = (props: Props) => {
   const {title, backgroundColor} = props;
+
   return (
     <View
       style={{
