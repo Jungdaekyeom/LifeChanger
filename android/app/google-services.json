@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1035096832764",
+    "project_id": "lifechanger-2d2a4",
+    "storage_bucket": "lifechanger-2d2a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035096832764:android:ca581319d0922783cff579",
+        "android_client_info": {
+          "package_name": "com.lifechanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035096832764-2b5ut6qvf1thg6kubkohov3kq0u7akpl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifechanger",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1035096832764-55fhg734e3979qaablvple072mmsh0v2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwfHeYGP1mO1BJc0cjKnTFuz3s8Gyb5RQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035096832764-55fhg734e3979qaablvple072mmsh0v2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
