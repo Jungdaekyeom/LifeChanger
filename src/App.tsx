@@ -1,22 +1,22 @@
 import type {PropsWithChildren} from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  useColorScheme,
   View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  SafeAreaView,
+  useColorScheme,
 } from 'react-native';
-
 import {
   Colors,
-  DebugInstructions,
   Header,
   LearnMoreLinks,
+  DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import CommonHeader from './common_component/Header';
 import * as Sentry from '@sentry/react-native';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -26,6 +26,8 @@ Sentry.init({
   dsn: 'https://02de5347ddd14400a8cce80876e406cd@o4505281532067840.ingest.sentry.io/4505281548582912',
   enableNative: false,
 });
+
+const queryClient = new QueryClient();
 
 function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -92,7 +94,11 @@ function App(): JSX.Element {
 }
 
 function ProviderWrapper(): React.ReactElement {
-  return <App />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
+  );
 }
 
 const styles = StyleSheet.create({
