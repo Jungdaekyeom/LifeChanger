@@ -2,7 +2,6 @@ import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
   ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
   useColorScheme,
@@ -16,12 +15,17 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-// import CommonHeader from './common_component/Header';
 import CommonHeader from './common_component/Header';
+import * as Sentry from '@sentry/react-native';
 
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
+
+Sentry.init({
+  dsn: 'https://02de5347ddd14400a8cce80876e406cd@o4505281532067840.ingest.sentry.io/4505281548582912',
+  enableNative: false,
+});
 
 function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -87,6 +91,10 @@ function App(): JSX.Element {
   );
 }
 
+function ProviderWrapper(): React.ReactElement {
+  return <App />;
+}
+
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
@@ -106,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Sentry.wrap(ProviderWrapper);

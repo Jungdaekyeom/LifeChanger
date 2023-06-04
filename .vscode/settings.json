@@ -12,7 +12,6 @@
   },
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
-
   "path-intellisense.mappings": {
     "@assets": "${workspaceFolder}/assets"
   },
