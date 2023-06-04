@@ -1,13 +1,12 @@
-import * as Sentry from '@sentry/react-native';
+// import * as Sentry from '@sentry/react-native';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-import Root from './navigations/Root';
 import {NavigationContainer} from '@react-navigation/native';
 import HomeStack from './main/navi/homeStack';
 
-Sentry.init({
-  dsn: '',
-  enableNative: false,
-});
+// Sentry.init({
+//   dsn: '',
+//   enableNative: false,
+// });
 
 const queryClient = new QueryClient();
 
@@ -26,4 +25,4 @@ function ProviderWrapper(): React.ReactElement {
   );
 }
 
-export default Sentry.wrap(ProviderWrapper);
+export default ProviderWrapper;
